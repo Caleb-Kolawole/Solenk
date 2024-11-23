@@ -1,0 +1,38 @@
+{
+  "functions": {
+    "source": "functions"
+  },
+  "hosting": [
+    {
+      "target": "landing",
+      "public": "static-pages/landing-page",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    {
+      "target": "app",
+      "public": "build",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  ]
+
+}

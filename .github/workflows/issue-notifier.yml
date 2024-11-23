@@ -1,0 +1,18 @@
+name: Issue Assignment Notification
+
+"on":
+  issues:
+    types:
+      - assigned
+
+jobs:
+    issueNotifyTelegram:
+        runs-on: ubuntu-latest
+        steps:
+        - name: send custom message
+          uses: appleboy/telegram-action@master
+          with:
+            to: ${{ secrets.TELEGRAM_CODE_PUSH_SECRETS }}
+            token: ${{ secrets.TELEGRAM_TOKEN }}
+            message: |
+              issue NO.${{ github.event.issue.number }}  has testing been created and assigned to solomonkola in ${{ github.repository }} the title of the issue is ${{ github.event.issue.title }} check the board for more information https://github.com/users/Solomonkola/projects/1

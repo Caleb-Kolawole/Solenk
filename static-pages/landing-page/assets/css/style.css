@@ -1,0 +1,127 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Global Styles */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #4facfe;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .header .nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .header .nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .header .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+  
+  .hero .cta {
+    background: #fff;
+    color: #4facfe;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .hero .cta:hover {
+    background: #f2f2f2;
+  }
+  
+  /* Features Section */
+  .features {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .features h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .feature-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .feature {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+  }
+  
+  .feature h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .about h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #4facfe;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  

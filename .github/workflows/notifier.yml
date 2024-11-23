@@ -1,0 +1,20 @@
+name: Notifier
+
+"on":
+  push:
+    branches:  [ "*/*", dev]
+  pull_request:
+    branches: [ "*/*", dev]
+
+jobs:
+    notifyTelegram:
+        runs-on: ubuntu-latest
+        steps:
+        - name: send custom message
+          uses: appleboy/telegram-action@master
+          with:
+            to: ${{ secrets.TELEGRAM_CODE_PUSH_SECRETS }}
+            token: ${{ secrets.TELEGRAM_TOKEN }}
+            message: |
+              A code ${{ github.event_name }} event has been made by ${{ github.actor }} in ${{ github.repository }} repository
+              The commit message is  ${{ github.event.head_commit.message }} on ${{ github.ref_name }} branch
